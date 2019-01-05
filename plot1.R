@@ -22,11 +22,11 @@ FebSubset <- Household_Pwr_Consump[Household_Pwr_Consump$Date >= Date1 & Househo
 
 
 #plot1.png
-#png(file = 'plot1.png')
+png(file = 'plot1.png')
 
 par(mar = c(5.1,5.1,3.1,1))
 Plot1 <- hist(FebSubset$Global_active_power, main = "Global Active Power", xlab = "Global Active Power (kilowatts)",
               col= "red")
 
-#dev.off()
+dev.off()
 
